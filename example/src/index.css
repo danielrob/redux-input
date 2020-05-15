@@ -12,3 +12,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Page {
+  padding: 60px 100px;
+}
+
+.Rendered {
+  margin-right: 200px;
+}
+
+.Flex {
+  display: flex;
+}

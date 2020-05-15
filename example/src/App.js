@@ -1,10 +1,17 @@
 import React from 'react'
+import { configureStore } from '@reduxjs/toolkit'
+import { Provider } from 'react-redux'
+import 'antd/dist/antd.css'
 
-import { ExampleComponent } from 'redux-input'
-import 'redux-input/dist/index.css'
+import Page from './components/Page'
+import reducer from './reducer'
 
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+const store = configureStore({ reducer })
+
+const App = () => (
+  <Provider store={store}>
+    <Page>hello</Page>
+  </Provider>
+)
 
 export default App

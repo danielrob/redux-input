@@ -23,15 +23,15 @@ const BasicExampleWrapper = ({ children }) => {
               import { ReduxInput } from 'redux-input'
               import { DatePicker } from 'antd'
 
-              import { basicExampleInput } from './selectors'
-              import { basicExampleAction } from './actions'
+              import selectors from '../selectors'
+              import actions from '../actions'
 
-              const BasicExample = ({ children }) => {
+              const BasicExample = () => {
                 return (
                   <ReduxInput
                     Component={DatePicker}
-                    selector={basicExampleInput}
-                    action={basicExampleAction}
+                    selector={selectors.basicExampleInput}
+                    action={actions.basicExampleAction}
                   />
                 )
               }
@@ -41,10 +41,10 @@ const BasicExampleWrapper = ({ children }) => {
         <SyntaxHighlighter language='javascript' style={docco}>
           {outdent`
               // selectors.js
-              export const basicExampleInput = (state) => state.basic.example.input
+              const basicExampleInput = (state) => state.basic.example.input
 
               // actions.js
-              export const basicExampleAction = (payload) => ({
+              const basicExampleAction = (payload) => ({
                 type: 'BASIC_EXAMPLE/CHANGE',
                 payload,
               })

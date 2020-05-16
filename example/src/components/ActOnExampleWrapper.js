@@ -47,10 +47,10 @@ const ActOnExampleWrapper = ({ children }) => {
           <SyntaxHighlighter language='javascript' style={docco}>
             {outdent`
               // selectors.js
-              export const actOn = (state) => state.actOn
+              const actOn = (state) => state.actOn
 
               // actions.js
-              export const actOnExampleInputChange = (payload) => ({
+              const actOnExampleInputChange = (payload) => ({
                 type: 'ACT_ON_EXAMPLE/CHANGE',
                 payload,
               })
@@ -58,7 +58,7 @@ const ActOnExampleWrapper = ({ children }) => {
               // reducer.js
               import { createReducer } from '@reduxjs/toolkit'
 
-              actOn: createReducer({ example: { input: null } }, {
+              actOn: createReducer({ example: { input: "option1" } }, {
                 'ACT_ON_EXAMPLE/CHANGE': (_, { payload }) => payload
               })
             `}

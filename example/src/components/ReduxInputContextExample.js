@@ -21,7 +21,7 @@ const ReduxInputContextExample = () => {
       <ReduxInput
         Component={Select}
         actOn='example.input2'
-        placeholder="Select a person"
+        placeholder="Please select"
         style={{
           minWidth: 200,
           marginLeft: 20

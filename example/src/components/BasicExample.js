@@ -5,7 +5,7 @@ import { DatePicker } from 'antd'
 import selectors from '../selectors'
 import actions from '../actions'
 
-const BasicExample = ({ children }) => {
+const BasicExample = () => {
   return (
     <ReduxInput
       Component={DatePicker}

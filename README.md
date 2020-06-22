@@ -1,6 +1,6 @@
 # Redux Input
 
-> Connect input components to redux with just an action creator and a selector.
+> Redux input helps to reduce writing boilerplate handlers for connecting formless inputs to redux. Connect input components to redux with just an action creator and a selector. 
 
 [![NPM](https://img.shields.io/npm/v/redux-input.svg)](https://www.npmjs.com/package/redux-input) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
